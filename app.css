@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav{
+      @apply bg-white flex justify-between w-3/4 mx-auto py-10
+}
+
+.btn{
+      @apply 
+}

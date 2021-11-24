@@ -1,5 +1,6 @@
 module.exports = {
-  purge: [],
+  mode:'jit',
+  purge: ['./index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -83,7 +84,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      transition:{
+        transitionProperty: ['left','right']
+      }
+    },
   },
   plugins: [],
 }

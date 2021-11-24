@@ -5,12 +5,12 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.14",
-    "tailwindcss": "^2.1.2"
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^2.2.19"
   },
   "scripts": {
-    "build-css": "tailwind build app.css -o style.css"
+    "build-css": "tailwind build -i app.css -o style.css"
   },
   "keywords": [],
   "author": "",

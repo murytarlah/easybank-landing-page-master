@@ -2,62 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav{
-      @apply flex justify-between w-4/5 mx-auto items-center;
-};
-
+/* 
 .navigation li{
-      @apply text-gray-500 border-solid  md:border-b-4 py-4 md:py-0 border-transparent hover:text-black hover:border-l-green text-center h-full
-}
+      @apply before:absolute before:left-1/2 before:right-1/2 before:bottom-5 before:h-0.5 before:transition before:ease-out before:duration-300 
+} */
 
-.btn{
-      @apply bg-gradient-to-r from-l_green to-b_cyan hover:from-l_green-l hover:to-b_cyan-l rounded-full p-2 px-4 text-white font-medium hover:text-opacity-90 focus:outline-none
-};
 
-.card{
-      @apply col-span-4 sm:col-span-2 lg:col-span-1 my-3 text-center sm:text-left
-}
-.card-icon{
-      @apply my-10 
-}
-.card-icon img{
-      @apply mx-auto sm:mx-0
-}
+@layer components{
+      .nav{
+            @apply flex justify-between w-4/5 mx-auto items-center;
+      };
+      
+      .navigation li{
+            @apply text-gray-500 py-4 md:py-0 text-center hover:text-black h-full relative before:absolute before:left-1/2 before:right-1/2 hover:before:left-0 before:bottom-0 before:h-[2px] before:transition-all before:ease-out before:duration-300 before:bg-l_green hover:before:right-0 
+      }
 
-.text h3{
-      @apply text-2xl my-5
-}
-
-.a-card {
-      @apply col-span-4 sm:col-span-2 lg:col-span-1 rounded-md bg-white overflow-hidden;
-}
-
-.card-img{
-      @apply w-auto max-h-52 overflow-hidden
-}
-
-.card-img img{
-      @apply w-full h-48 object-cover
-}
-
-.card-text{
-      @apply m-7
-}
-
-.card-text .card-title{
-      @apply text-lg my-4
-}
-
-.card-text .card-author{
-      @apply text-xs text-gray-300
-}
-
-.s-icons{
-      @apply grid grid-cols-5 gap-2 col-span-1
-}
-
-.footer-ul li{
-      @apply col-span-4 sm:col-span-1
+      .btn{
+            @apply bg-gradient-to-r from-l_green to-b_cyan hover:from-l_green-l hover:to-b_cyan-l rounded-full p-2 px-4 text-white font-medium hover:text-opacity-100 focus:outline-none
+      };
+      .card{
+            @apply col-span-4 sm:col-span-2 lg:col-span-1 my-3 text-center sm:text-left
+      }
+      .card-icon{
+            @apply my-10 
+      }
+      .card-icon img{
+            @apply mx-auto sm:mx-0
+      }
+      
+      .text h3{
+            @apply text-2xl my-5
+      }
+      
+      .a-card {
+            @apply col-span-4 sm:col-span-2 lg:col-span-1 rounded-md bg-white overflow-hidden;
+      }
+      
+      .card-img{
+            @apply w-auto max-h-52 
+      }
+      
+      .card-img img{
+            @apply w-full h-48 object-cover
+      }
+      
+      .card-text{
+            @apply m-7
+      }
+      
+      .card-text .card-title{
+            @apply text-lg my-4
+      }
+      
+      .card-text .card-author{
+            @apply text-xs text-gray-300
+      }
+      
+      .s-icons{
+            @apply grid grid-cols-5 gap-2 col-span-1
+      }
+      
+      .footer-ul li{
+            @apply col-span-4 sm:col-span-1
+      }
 }
 
 header > div,nav > div, section > div, footer > div{
